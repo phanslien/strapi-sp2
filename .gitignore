@@ -104,3 +104,6 @@ license.txt
 exports
 .cache
 build
+
+
+Path: ./my-project/.gitignore

@@ -1,9 +1,10 @@
 import { getExistingProducts } from "./utils/cartFunction.js"
+
+
 const details = document.querySelector(".product-details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const idItem = params.get("id");
-
 const url = "http://localhost:1337/" + "products/"+ idItem;
 const productsInCart = getExistingProducts();
 

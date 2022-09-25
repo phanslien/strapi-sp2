@@ -1,2 +1,2 @@
-export const baseUrl = "http://localhost:1337/";
+export const baseUrl = "https://vast-wave-93218.herokuapp.com/";
 

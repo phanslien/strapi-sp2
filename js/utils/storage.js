@@ -26,8 +26,6 @@ export function getUserName() {
 export function clearStorageLogout() {
     localStorage.removeItem("user");
     localStorage.removeItem("token");
-
-    location.href = "favourites.html";
 }
 
 function saveToStorage(key, value) {

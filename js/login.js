@@ -3,7 +3,6 @@ import displayMessage from "./settings/displayMessage.js";
 import { saveToken, saveUser } from "./utils/storage.js";
 import createButton from "./utils/loggedIn.js";
 
-
 const form = document.querySelector("form");
 const username = document.querySelector(".username");
 const password = document.querySelector(".password");
@@ -27,7 +26,10 @@ function submitForm(event) {
 
     doLogin(usernameValue, passwordValue);
 }
+
 createButton();
+
+
 async function doLogin(username, password) {
     const url = baseUrl + "auth/local";
     const data = JSON.stringify({identifier: username, password: password});

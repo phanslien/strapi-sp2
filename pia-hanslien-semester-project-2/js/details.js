@@ -4,7 +4,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const idItem = params.get("id");
 
-const url = "http://localhost:1337/" + "products/"+ idItem;
+const url = "https://vast-wave-93218.herokuapp.com/" + "products/"+ idItem;
 const productsInCart = getExistingProducts();
 
 async function displayGlasses() {
@@ -15,7 +15,7 @@ async function displayGlasses() {
         details.innerHTML += `
         <div class="row g-0 m-4">
           <div class="col-md-7">
-          <img src="http://localhost:1337${detailsOfProduct.image.formats.large.url}" class="card-img-top" alt="...">
+          <img src="https://vast-wave-93218.herokuapp.com/${detailsOfProduct.image.formats.large.url}" class="card-img-top" alt="...">
           <a href="edit.html?id=${detailsOfProduct.id}" class="edit-link"><i class="fa fa-pen"></i> Edit product</a>
           </div>
           <div class="col-md-4 m-4">

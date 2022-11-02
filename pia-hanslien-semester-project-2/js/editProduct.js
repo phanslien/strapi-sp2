@@ -16,7 +16,7 @@ createButton();
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const idItem = params.get("id");
-const url = "http://localhost:1337/" + "products/"+ idItem;
+const url = "https://vast-wave-93218.herokuapp.com/" + "products/"+ idItem;
 const form = document.querySelector("form");
 const title = document.querySelector(".name");
 const price = document.querySelector(".price");
